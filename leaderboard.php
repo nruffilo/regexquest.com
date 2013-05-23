@@ -11,7 +11,7 @@ if (isset($_POST['email'])) {
 }
 ?>
 		<?php echo $header; ?>
-		<div id="content">
+		<div class="container">
 			<h1>Leaderboard</h1>
 			<p><em>The top 50</em></p>
 		

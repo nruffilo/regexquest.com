@@ -36,7 +36,7 @@ $header=<<<HEADER
                     <li><a href="/">Home</a></li>
                     <li><a href="/tutorial.php">Get started</a></li>
                     <li><a href="/leaderboard.php">High Scores</a></li>
-                    <li><a href="/about.php">About</a></li>
+                    <li><a href="/about.php">About Regex Quest</a></li>
                 </ul>
             </div>
         </div>
@@ -49,8 +49,9 @@ $footer=<<<FOOTER
     <div class="footer">
         <div class="container">
             <a class="btn btn-small" href="/tutorial.php">Regex Quest Tutorial</a>
-            <a class="btn btn-small" href="">Regex Quest Leaderboard</a>
-            <a class="btn btn-small">About Regular Expressions</a>
+            <a class="btn btn-small" href="/leaderboard.php">Regex Quest Leaderboard</a>
+            <a class="btn btn-small" href="http://en.wikipedia.org/wiki/Regular_expression" target="_blank">About Regular Expressions</a>
+            <a class="btn btn-small" href="https://github.com/nruffilo/regexquest.com">Project GitHub</a>
         </div>
     </div>
 </body>

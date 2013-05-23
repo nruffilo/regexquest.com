@@ -36,7 +36,7 @@ $header=<<<HEADER
                     <li><a href="/">Home</a></li>
                     <li><a href="/tutorial.php">Get started</a></li>
                     <li><a href="/leaderboard.php">High Scores</a></li>
-                    <li><a href="/leaderboarda.php">About</a></li>
+                    <li><a href="/about.php">About</a></li>
                 </ul>
             </div>
         </div>

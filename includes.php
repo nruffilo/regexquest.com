@@ -1,6 +1,6 @@
 <?php
-error_reporting(E_ALL);
-ini_set("display_errors",true);
+//error_reporting(E_ALL);
+//ini_set("display_errors",true);
 require("config.php");
 require("DatabaseUtil.php");
 require("utilities.php");
@@ -26,10 +26,11 @@ $header=<<<HEADER
 <body>
 
 
-<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-inverse">
     <div class="navbar-inner">
         <div class="container">
             <a href="/" class="brand">Regex Quest</a>
+            <a href="/login.php" class="navbar-text pull-right">Login</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     <li><a href="/">Home</a></li>
@@ -44,6 +45,14 @@ $header=<<<HEADER
 HEADER;
 
 $footer=<<<FOOTER
+    <hr />
+    <div class="footer">
+        <div class="container">
+            <a class="btn btn-small" href="/tutorial.php">Regex Quest Tutorial</a>
+            <a class="btn btn-small" href="">Regex Quest Leaderboard</a>
+            <a class="btn btn-small">About Regular Expressions</a>
+        </div>
+    </div>
 </body>
 </html>
 FOOTER;

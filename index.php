@@ -34,36 +34,10 @@ if ($user != null) {
 </div>
 
 <div id="content">
+</div>
 
-
-
-<div class="module login">
-    <form method="post" id="login_form">
-        <fieldset>
-            <legend>Hero Login</legend>
-            <dl>
-                <dt>E-Mail:</dt>
-                <dd><input type="text" name="email"/></dd>
-                <dt>Password:</dt>
-                <dd><input type="password" name="passwd"/></dd>
-            </dl>
-            <input type="submit" class="btn btn-small btn-primary" value="Begin Questing"/>
-        </fieldset>
-      
-    </form>
-</div><!-- .module.login -->
-<hr />
 <?php
 }
-?>			
-			<a id="about" href="#about" name="about" class="button" onclick="$('#about_div').toggleClass('displayBlock');">Regex Hero Tutorial</a>
-			
-			<a id="leaderboard" href="leaderboard.php" name="leaderboard" class="button">Regex Quest Leaderboard</a>
-		
-			
-			
-			<a class="button" href="http://en.wikipedia.org/wiki/Regular_expression" target="_blank">About Regular Expressions</a>
-		</div>
-<?
+
 echo $footer;
 ?>

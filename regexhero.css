@@ -1,3 +1,9 @@
+*{
+    font-family: Helvetica, Arial, sans-serif;  
+}
+
+
+
 #title_heading {
 	display:none;
 	margin-left: auto;
@@ -27,6 +33,11 @@
 	background-color: #CCFFCC;
 	border-radius: 5px;
 	text-decoration: none;
+    cursor:pointer;
+}
+input.button{
+    font-size:1em;
+    padding:0;
 }
 
 #content {
@@ -36,10 +47,11 @@
 }
 
 #about_div {
-	display: none;
+	display: block;
 	border: 1px solid #000000;
-	background-color: #cccccc;
+	background-color: #dedede;
 	border-radius: 5px;
+	padding:10px;
 }
 
 #question {
@@ -96,4 +108,29 @@
 	float:right;
 	display:inline-block;
 	font-weight: bold;
+}
+
+.hero-unit{
+    text-align:center;
+}
+.hero-unit .small{
+    font-size:.8em;
+}
+.hero-unit .main-cta{
+    padding:2em;
+}
+
+.hero-unit h1{
+    height:175px; 
+    width:400px; 
+    margin:10px auto; 
+    text-indent:100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    background:url('regexQuest_logo.png') left top no-repeat;
+    background-size: 400px 175px;
+}
+
+footer .container{
+    text-align:center;
 }

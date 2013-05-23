@@ -42,10 +42,8 @@ function parseTest(data) {
 		</script>
 	</head>
 	<body>
-		<div id="title_heading">Regex</div>
-		<div id="title_subheading">Hero</div>
-<?php
-
+		<?php echo $header; 
+		
 if ($user == null) {		
 		?>
 		<script langauge="javascript">

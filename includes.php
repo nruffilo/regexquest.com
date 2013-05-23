@@ -46,14 +46,16 @@ HEADER;
 
 $footer=<<<FOOTER
     <hr />
-    <div class="footer">
+    <footer>
         <div class="container">
-            <a class="btn btn-small" href="/tutorial.php">Regex Quest Tutorial</a>
-            <a class="btn btn-small" href="/leaderboard.php">Regex Quest Leaderboard</a>
-            <a class="btn btn-small" href="http://en.wikipedia.org/wiki/Regular_expression" target="_blank">About Regular Expressions</a>
-            <a class="btn btn-small" href="https://github.com/nruffilo/regexquest.com">Project GitHub</a>
+            <div class="btn-group">
+                <a class="btn btn-small" href="/tutorial.php">Regex Quest Tutorial</a>
+                <a class="btn btn-small" href="/leaderboard.php">Regex Quest Leaderboard</a>
+                <a class="btn btn-small" href="http://en.wikipedia.org/wiki/Regular_expression" target="_blank">About Regular Expressions</a>
+                <a class="btn btn-small" href="https://github.com/nruffilo/regexquest.com">Project GitHub</a>
+            </div>
         </div>
-    </div>
+    </footer>
 </body>
 </html>
 FOOTER;

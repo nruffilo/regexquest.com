@@ -130,3 +130,7 @@ input.button{
     background:url('regexQuest_logo.png') left top no-repeat;
     background-size: 400px 175px;
 }
+
+footer .container{
+    text-align:center;
+}

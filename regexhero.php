@@ -1,13 +1,8 @@
 <?php
 require("includes.php");
+echo $header; 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html>
-	<head>
-		<title>Regex Quest - Game</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script src="regexhero.js"></script>
-		<script src="questjs.php" language="javascript"></script>
+		
 		<script>
 			questStatus = {};
 		<?php
@@ -31,13 +26,6 @@ require("includes.php");
 			}
 		?>
 		</script>
-		<meta charset="UTF-8" />
-		<link rel="stylesheet" href="regexhero.css" type="text/css"/>
-		
-	</head>
-	<body>
-		
-		<?php echo $header; ?>
 		
 		<div id="stats">
 			<div class="stat_label">Problems Solved:</div> <div class="stat_value" id="stats_problems_solved"></div>
@@ -78,8 +66,9 @@ require("includes.php");
 				<div id="question_answer2_response"></div>
 				
 				<div id="feedback"></div>
-				<input type="button" id="next_question_button" onclick="loadNextQuestion()" value="Onwards!"/>
+				<input type="button" id="next_question_button" onclick="loadNextQuestion()" class="btn btn-large btn-primary" value="Onwards!"/>
 			</div>		
 		</div>
-	</body>
-</html>
+<?
+echo $footer;
+?>

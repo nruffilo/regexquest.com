@@ -2,17 +2,7 @@
     font-family: Helvetica, Arial, sans-serif;  
 }
 
-h1#head{
-    height:175px; 
-    width:400px; 
-    margin:10px auto; 
-    text-indent:100%; 
-    white-space: nowrap; 
-    overflow: hidden; 
-    background:url('regexQuest_logo.png') left top no-repeat;
-    background-size: 400px 175px;
-}
-h1#head a{ display:block; height:100%; width:100%;}
+
 
 #title_heading {
 	display:none;
@@ -128,4 +118,15 @@ input.button{
 }
 .hero-unit .main-cta{
     padding:2em;
+}
+
+.hero-unit h1{
+    height:175px; 
+    width:400px; 
+    margin:10px auto; 
+    text-indent:100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    background:url('regexQuest_logo.png') left top no-repeat;
+    background-size: 400px 175px;
 }

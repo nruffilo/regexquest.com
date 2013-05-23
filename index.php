@@ -27,9 +27,9 @@ if ($user != null) {
 <div class="hero-unit">
     <div class="container">
         <h1>Regex Quest</h1>
-        <p>Face hard code problems and emerge victorious, with <em>the power of regular expressions</em>.</p>
+        <p>Face challenging code problems and emerge victorious, with <em>the power of regular expressions</em>.</p>
         <p class="main-cta"><a href="/signup.php" class="btn btn-large btn-primary">Create your hero profile</a></p>
-        <p class="small">or just <a href="">play the tutorial</a></p>
+        <p class="small">or just <a href="/tutorial.php">play the tutorial</a></p>
     </div>
 </div>
 

@@ -22,6 +22,9 @@ if (isset($_POST['email'])) {
 		<link rel="stylesheet" href="regexhero.css" type="text/css"/>
 	</head>
 <body>
+
+		<?php echo $header; ?>
+
 <h1>Hero Registration</h1>
 
 <form method="post" id="signup_form" onsubmit="return checkSignupForm(this);">

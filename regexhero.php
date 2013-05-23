@@ -36,11 +36,8 @@ require("includes.php");
 		
 	</head>
 	<body>
-			<div style="margin-left: auto;margin-right: auto;text-align: center;"><img src='regexQuest_logo.png' style="height:175px; width:400px; margin-left:auto; margin-right:auto;"/></div>
-			<!--
-		<div id="title_heading">Regex</div>
-		<div id="title_subheading">Quest</div>
-		-->
+		
+		<?php echo $header; ?>
 		
 		<div id="stats">
 			<div class="stat_label">Problems Solved:</div> <div class="stat_value" id="stats_problems_solved"></div>

@@ -20,7 +20,7 @@ if (isset($_POST['email'])) {
 		<link rel="stylesheet" href="regexhero.css" type="text/css"/>
 	</head>
 	<body>
-		<div style="margin-left: auto;margin-right: auto;text-align: center;"><img src='regexQuest_logo.png' style="height:175px; width:400px; margin-left:auto; margin-right:auto;"/></div>
+		<?php echo $header; ?>
 		<div id="content">
 			<h1>Leaderboard</h1>
 			<p>(Displays only the top 50)</p>

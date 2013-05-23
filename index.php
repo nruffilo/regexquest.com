@@ -20,12 +20,10 @@ if (isset($_POST['email'])) {
 		<link rel="stylesheet" href="regexhero.css" type="text/css"/>
 	</head>
 	<body>
-		<div style="margin-left: auto;margin-right: auto;text-align: center;"><img src='regexQuest_logo.png' style="height:175px; width:400px; margin-left:auto; margin-right:auto;"/></div>
-<!--
-		<div id="title_heading">Regex</div>
-		<div id="title_subheading">Hero</div>
-		-->
+	
 <?php
+
+echo $header;
 
 if ($user != null) {		
 		?>
@@ -36,20 +34,26 @@ if ($user != null) {
 } else {
 ?>
 <div id="content">
-<h1>Hero Login</h1>
 
-<form method="post" id="login_form">
-E-Mail:<br/>
-<input type="text" name="email"/><br/>
-Password:<br/>
-<input type="password" name="passwd"/><br/>
-<input type="submit" value="Begin Questing"/>
-</form>
-<br/>
-OR<br/>
-<a href='signup.php'>Create a New Hero</a>
-<br/><br/>
-Forgot your password?  (Functionality coming soon!)
+<div class="module login">
+    <h1>Hero Login</h1>
+    <form method="post" id="login_form">
+        <fieldset>
+            <legend>Hero Login</legend>
+            <dl>
+                <dt>E-Mail:</dt>
+                <dd><input type="text" name="email"/></dd>
+                <dt>Password:</dt>
+                <dd><input type="password" name="passwd"/></dd>
+            </dl>
+        </fieldset>
+        <input type="submit" value="Begin Questing"/>
+    </form>
+    <br/>
+    OR<br/>
+    <p><a class="button" href='signup.php'>Create a New Hero</a></p>
+    <p>Forgot your password?  (Functionality coming soon!)</p>
+</div><!-- .module.login -->
 
 <?php
 }

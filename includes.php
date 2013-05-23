@@ -11,4 +11,6 @@ $user = null;
 if (isset($_SESSION['user'])) {
 	$user = &$_SESSION['user'];
 }
+
+$header='<h1 id="head"><a href="/">Regex Hero</a></h1>';
 ?>

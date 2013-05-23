@@ -10,23 +10,11 @@ if (isset($_POST['email'])) {
 	}
 }
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html>
-	<head>
-		<meta charset="UTF-8" />
-		<title>Regex Hero</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script src="index.js"></script>
-		<link rel="stylesheet" href="regexhero.css" type="text/css"/>
-	</head>
-	<body>
-		<div style="margin-left: auto;margin-right: auto;text-align: center;"><img src='regexQuest_logo.png' style="height:175px; width:400px; margin-left:auto; margin-right:auto;"/></div>
-		<div id="content">
+		<?php echo $header; ?>
+		<div class="container">
 			<h1>Leaderboard</h1>
-			<p>(Displays only the top 50)</p>
+			<p><em>The top 50</em></p>
 		
-			<a href="index.php" class="button">Home</a>
-
 			<table id="leaderboard">
 				<thead>
 					<tr>
@@ -57,5 +45,6 @@ EOROW;
 			</table>			
 			
 		</div>
-	</body>
-</html>
+<?php 
+echo $footer;
+?>

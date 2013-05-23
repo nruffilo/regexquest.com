@@ -10,16 +10,7 @@ if (isset($_POST['email'])) {
 	}
 }
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html>
-	<head>
-		<meta charset="UTF-8" />
-		<title>Regex Hero</title>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script src="index.js"></script>
-		<link rel="stylesheet" href="regexhero.css" type="text/css"/>
-	</head>
-	<body>
+
 	
 <?php
 
@@ -33,16 +24,20 @@ if ($user != null) {
 
 } else {
 ?>
+<div class="hero-unit">
+    <div class="container">
+        <h1>Regex Quest</h1>
+        <p>Face hard code problems and emerge victorious, with <em>the power of regular expressions</em>.</p>
+        <p class="main-cta"><a href="/signup.php" class="btn btn-large btn-primary">Create your hero profile</a></p>
+        <p class="small">or just <a href="">play the tutorial</a></p>
+    </div>
+</div>
+
 <div id="content">
 
-    	<div id="about_div">
-			<p>Regex Quest is a game that teaches regular expressions by asking players to solve problems using only the wonderful tool that is Regular Expressions.  </p>
-			<p>Some questions are very straight forward, but some require thought.  Additionally, some questions are multi-part, so you'll need to translate the text once, then use another expression to translate it once again.</p>
-			<p>Three different modes - easy, medium, insane - are here to train users and give a reasonable judge what level master you are!</p>
-		</div>
+
 
 <div class="module login">
-    <h2>Hero Login</h2>
     <form method="post" id="login_form">
         <fieldset>
             <legend>Hero Login</legend>
@@ -52,24 +47,23 @@ if ($user != null) {
                 <dt>Password:</dt>
                 <dd><input type="password" name="passwd"/></dd>
             </dl>
-            <input type="submit" class="button" value="Begin Questing"/>
+            <input type="submit" class="btn btn-small btn-primary" value="Begin Questing"/>
         </fieldset>
       
     </form>
-    <p style="text-align:center">OR</p>
-    <p><a class="button" href='signup.php'>Create a New Hero</a></p>
-    <!-- <p>Forgot your password?  (Functionality coming soon!)</p> -->
 </div><!-- .module.login -->
 <hr />
 <?php
 }
 ?>			
 			<a id="about" href="#about" name="about" class="button" onclick="$('#about_div').toggleClass('displayBlock');">Regex Hero Tutorial</a>
+			
 			<a id="leaderboard" href="leaderboard.php" name="leaderboard" class="button">Regex Quest Leaderboard</a>
 		
 			
 			
 			<a class="button" href="http://en.wikipedia.org/wiki/Regular_expression" target="_blank">About Regular Expressions</a>
 		</div>
-	</body>
-</html>
+<?
+echo $footer;
+?>
